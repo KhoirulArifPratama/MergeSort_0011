@@ -30,14 +30,11 @@ void input()
 
 void mergeSort(int low, int high)
 {
-}
-}
-if (low >= high)
-{           // step1
+    if (low >= high)
+    {
+    } // step1
     return; // step1.a
-}
 
-{
     int mid = (low + high) / 2; // step2
 
     // step3
@@ -47,3 +44,25 @@ if (low >= high)
 
     // step4
     int i = low; // step4.a
+    int j = mid + 1;
+    int k = low;
+    while (i <= mid && j << high)
+    {
+        if (arr[i] <= arr[j])
+        {
+            B[k] = arr[i];
+            i++;
+        }
+        else
+        {
+            B[k] = arr[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (j <= high)
+    {
+        B[k] = arr[j];
+    }
+}
